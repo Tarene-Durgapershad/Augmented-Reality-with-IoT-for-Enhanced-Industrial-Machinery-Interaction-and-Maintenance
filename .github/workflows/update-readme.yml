@@ -1,0 +1,21 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Use scp-action to update remote server
+      uses: Tarene-Durgapershad/scp-action@master
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USER }}
+        password: ${{ secrets.SERVER_PASSWORD }}
+        source: "README.md"
+        target: "https://github.com/Tarene-Durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance/blob/main/README.md"
