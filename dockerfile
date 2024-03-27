@@ -1,4 +1,4 @@
-FROM ghcr.io/tarene-durgapershad/drone-scp:1.6.14
+FROM ghcr.io/tarene-durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance:main
 
 COPY entrypoint.sh /bin/entrypoint.sh
 
