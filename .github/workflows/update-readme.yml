@@ -20,4 +20,4 @@ jobs:
           password: ${{ secrets.HOST_PASSWORD }}
           port: ${{ secrets.HOST_PORT }}
           source: "README.md"
-          target: "/var/www/projects/232148780/README.md"
+          target: "/var/www/projects/232148780"
