@@ -44,4 +44,4 @@
 
 This project combines the cutting-edge capabilities of IoT and AR to create a transformative tool that aims to revolutionize industrial machinery interaction and maintenance practices, improving efficiency, safety, and user experience in industrial settings, paving the way for smarter, safer, and more efficient industrial operations.
 
-Testing workflow....:( :(
+Testing workflow....:(
