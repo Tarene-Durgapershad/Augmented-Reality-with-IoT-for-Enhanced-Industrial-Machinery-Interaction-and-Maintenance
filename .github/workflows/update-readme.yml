@@ -1,4 +1,4 @@
-name: Update README
+name: Your Workflow Name
 
 on:
   push:
@@ -9,21 +9,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: npm install @actions/core
+      - name: Install dependencies
+        run: npm install @actions/core
 
-    - name: Run your script
-      run: node index.js
-
-    - name: Use SCP to update remote server
-      uses: Tarene-Durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance@main
-      with:
-        host: ${{ secrets.HOST_IP }}
-        username: ${{ secrets.HOST_USERNAME }}
-        password: ${{ secrets.HOST_PASSWORD }}
-        port: ${{ secrets.HOST_PORT }}
-        source: "README.md"
-        target: "/var/www/projects/232148780"
+      - name: Use SCP to update remote server
+        uses: Tarene-Durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance@main
+        with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.HOST_USERNAME }}
+          password: ${{ secrets.HOST_PASSWORD }}
+          port: ${{ secrets.HOST_PORT }}
+          source: "README.md"
+          target: "/var/www/projects/232148780"
