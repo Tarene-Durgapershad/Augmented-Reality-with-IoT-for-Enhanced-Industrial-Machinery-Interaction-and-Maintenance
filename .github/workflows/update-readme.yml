@@ -15,4 +15,9 @@ jobs:
     - name: Use SCP to update remote server
       uses: Tarene-Durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance@main
       with:
-        my_input: ${{ secrets.HOST_IP }}
+        host: ${{ secrets.HOST_IP }}
+        username: ${{ secrets.HOST_USERNAME }}
+        password: ${{ secrets.HOST_PASSWORD }}
+        port: ${{ secrets.HOST_PORT }}
+        source: "README.md"
+        target: "/var/www/projects/232148780"
