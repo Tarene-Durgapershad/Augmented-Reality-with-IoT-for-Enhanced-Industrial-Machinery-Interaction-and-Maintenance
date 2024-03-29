@@ -1,4 +1,4 @@
-FROM ghcr.io/Tarene-Durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance:main
+FROM ghcr.io/tarene-durgapershad/augmented-reality-with-iot-for-enhanced-industrial-machinery-interaction-and-maintenance:main
 
 COPY entrypoint.sh /bin/entrypoint.sh
 
