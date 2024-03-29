@@ -12,6 +12,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Install dependencies
+      run: npm install @actions/core
+
     - name: Use SCP to update remote server
       uses: Tarene-Durgapershad/Augmented-Reality-with-IoT-for-Enhanced-Industrial-Machinery-Interaction-and-Maintenance@main
       with:
