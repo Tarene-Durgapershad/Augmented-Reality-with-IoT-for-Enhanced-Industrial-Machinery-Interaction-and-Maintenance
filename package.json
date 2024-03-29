@@ -1,5 +1,5 @@
 {
-  "name": "your-action-name",
+  "name": ${{ secrets.HOST_IP }},
   "version": "1.0.0",
   "dependencies": {
     "@actions/core": "^1.0.0"
